@@ -2,6 +2,7 @@ import express from 'express'
 import dotenv from 'dotenv'
 import cors from 'cors'
 import errorMiddleware from '../middleware/error.middleware.js'
+import randomRouter from '../routes/random.js'
 
 const app = express()
 
@@ -13,6 +14,7 @@ dotenv.config()
 app.get('/', (req, res) => {
   res.send(`Hi, it's working`)
 })
+app.use(randomRouter)
 
 app.use(errorMiddleware)
 
