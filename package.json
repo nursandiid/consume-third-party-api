@@ -1,5 +1,5 @@
 {
-  "name": "login-system-jwt",
+  "name": "consume-third-party-api",
   "version": "1.0.0",
   "description": "NodeJS express - Consume third party API",
   "main": "src/server.js",
